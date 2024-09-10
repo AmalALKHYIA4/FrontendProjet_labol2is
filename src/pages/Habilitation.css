@@ -1,0 +1,97 @@
+/* Conteneur principal */
+.habilitation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+  }
+  
+  .habilitation-container:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Titre principal */
+  .habilitation-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  /* Liste des habilitations */
+  .habilitation-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes par ligne */
+    gap: 24px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Cartes des habilitations */
+  .habilitation-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .habilitation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* En-tête de la carte */
+  .habilitation-header {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .habilitation-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Contenu de la carte */
+  .habilitation-content {
+    padding: 20px;
+  }
+  
+  .habilitation-info {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
+  .habilitation-info a {
+    color: #0066ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .habilitation-info a:hover {
+    color: #0044cc;
+    text-decoration: underline;
+  }
+  
+  /* Responsivité */
+  @media (max-width: 768px) {
+    .habilitation-list {
+      grid-template-columns: 1fr; /* Une colonne par ligne sur les petits écrans */
+    }
+  
+    .habilitation-container {
+      padding: 15px;
+    }
+  }
+  

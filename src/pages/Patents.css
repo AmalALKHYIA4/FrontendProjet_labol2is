@@ -1,0 +1,77 @@
+.patents-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.patents-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.patents-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.patent-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.patent-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.patent-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.pdf-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-link:hover {
+    text-decoration: underline;
+}
+
+.no-pdf {
+    font-style: italic;
+    color: #666;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .patents-page {
+        padding: 10px;
+    }
+
+    .patent-card {
+        max-width: 100%;
+    }
+
+    .patents-container {
+        flex-direction: column;
+    }
+}
